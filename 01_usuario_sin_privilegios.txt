@@ -1,0 +1,18 @@
+$ cat /etc/os-release | head -2
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+
+$ adduser --disabled-password --gecos "" practicas
+info: Creating home directory `/home/practicas' ...
+info: Copying files from `/etc/skel' ...
+info: Adding new user `practicas' to supplemental / extra groups `users' ...
+info: Adding user `practicas' to group `users' ...
+
+$ id practicas
+uid=1002(practicas) gid=1002(practicas) groups=1002(practicas),100(users)
+
+$ getent passwd practicas
+practicas:x:1002:1002:,,,:/home/practicas:/bin/bash
+
+$ groups practicas
+practicas : practicas users

@@ -1,0 +1,12 @@
+$ apt update
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+Fetched 34.2 MB in 2s (15.7 MB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+24 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+$ apt list --upgradable 2>/dev/null | wc -l
+25

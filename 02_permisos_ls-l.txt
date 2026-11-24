@@ -1,0 +1,9 @@
+$ runuser -u practicas -- sh -c "echo laboratorio seguro > ~/mi_archivo.txt"
+
+$ ls -l /home/practicas/mi_archivo.txt   (permisos por defecto)
+-rw-r--r-- 1 practicas practicas 19 Nov 24 19:20 /home/practicas/mi_archivo.txt
+
+$ chmod 600 /home/practicas/mi_archivo.txt
+
+$ ls -l /home/practicas/mi_archivo.txt   (solo el propietario)
+-rw------- 1 practicas practicas 19 Nov 24 19:20 /home/practicas/mi_archivo.txt
